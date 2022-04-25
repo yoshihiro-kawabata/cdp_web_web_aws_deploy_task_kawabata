@@ -3,7 +3,7 @@ lock "~> 3.17.0"
 
 set :application, "cdp_web_web_aws_deploy_task"    
 set :repo_url, "https://github.com/yoshihiro-kawabata/cdp_web_web_aws_deploy_task_kawabata.git"    # 3
-set :linked_files, %w{config/secrets.yml}   
+set :linked_files, %w{config/secrets.yml .env}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   
 set :keep_releases, 5   
 set :rbenv_ruby, '3.0.1'    
